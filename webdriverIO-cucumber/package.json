@@ -1,0 +1,28 @@
+{
+  "name": "webdriverio-cucumber",
+  "version": "1.0.0",
+  "description": "WebdriverIO with cucumber framework tests",
+  "main": "index.js",
+  "scripts": {
+    "setup-test": ".\\node_modules\\.bin\\selenium-standalone install --save-dev && .\\node_modules\\.bin\\selenium-standalone start",
+    "test": ".\\node_modules\\.bin\\wdio .\\tests\\config\\cucumber.wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dongabba/webdriverIO.git"
+  },
+  "author": "Alexander Zhaleiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongabba/webdriverIO/issues"
+  },
+  "homepage": "https://github.com/dongabba/webdriverIO#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
+    "selenium-standalone": "^6.15.2",
+    "wdio-allure-reporter": "^0.7.0",
+    "wdio-cucumber-framework": "^2.2.6",
+    "webdriverio": "^4.13.2"
+  }
+}
